@@ -1,0 +1,14 @@
+#cover_img_container {
+    min-width: 100vw;
+    min-height: 58.90vh;
+    background-image: url("/resources/img/pages/project_bk/cover_project_bk.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#cover_desc_container {
+    position: relative;
+    min-width: 100vw;
+    min-height: 41.10vh;
+}
+

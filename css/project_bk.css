@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "zurichroman";
+    src: url("../resources/fonts/zurich-bt-webfont.woff2") format("woff2"),
+      url("../resources/fonts/zurich-bt-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+#navbar_holder {
+    position: relative;
+}
+
+#scroll_container {
+    max-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+}
+
+.scroll_snap {
+    scroll-snap-align: start;
+    max-height: 100vh;
+}
+
+#project_img_one {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url("resources/img/pages/project_bk/project_img_one.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#double_img_container {
+    display: flex;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+#project_img_two {
+    width: 50vw;
+    min-height: 100vh;
+    background-image: url("/resources/img/pages/project_bk/project_img_two.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#project_img_three {
+    width: 50vw;
+    min-height: 100vh;
+    background-image: url("/resources/img/pages/project_bk/project_img_three.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#iframe_wrapper {
+    width: 100%;
+    max-height: 100vh;
+    display: inline-block;
+    background-color: black;
+}
+
+#iframe_wrapper iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    min-width: 1903px;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.fromLeft {
+    position: relative;
+    transform: translate(150px,150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.fromRight {
+    position: relative;
+    transform: translate(-150px,150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.reveal.fromLeft.active{
+    transform: translate(0px);
+    opacity: 1;
+}
+
+.reveal.fromRight.active{
+    transform: translate(0px);
+    opacity: 1;
+}
+
+#desc_title {
+    position: absolute;
+    top: 19.83%;
+    left: 19.55%;
+    font-size: 86px;
+    font-family: "zurichroman";
+    color: rgb(33, 33, 33);
+    line-height: 1.314px;
+    -moz-transform: matrix( 0.93002815233938,0,0,0.93002815233938,0,0);
+    -webkit-transform: matrix( 0.93002815233938,0,0,0.93002815233938,0,0);
+    -ms-transform: matrix( 0.93002815233938,0,0,0.93002815233938,0,0);
+    letter-spacing: 60%;
+}
